@@ -18,8 +18,8 @@ jobs:
         working-directory: ./main
         run: terraform init
 
-      - name: Terraform Apply
-        working-directory: ./main
+      - name: Terraform Destroy
+        working-directory: ./
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
