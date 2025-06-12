@@ -16,7 +16,7 @@ jobs:
 
       - name: Terraform Init
         working-directory: ./main
-        run: terraform init
+        run: terraform init -reconfigure 
 
       - name: Terraform Validate
         working-directory: ./main
